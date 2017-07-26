@@ -12,7 +12,7 @@ Useful information
 6. Deploy in Google: mvn clean appengine:update
 
 
-REST URL
+REST URL 
 --------
 http://localhost:8080/libro/find/all
 
