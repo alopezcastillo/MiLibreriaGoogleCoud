@@ -12,8 +12,21 @@ Useful information
 6. Deploy in Google: mvn clean appengine:update
 
 
-REST URL  
+REPOSITORIO GITHUB
+------------------
+
+https://github.com/alopezcastillo/MiLibreriaGoogleCoud
+
+REST URL
 --------
+https://1-dot-milibreria-174707.appspot.com/libro/find/all
+
+https://1-dot-milibreria-174707.appspot.com/libro/find/{id}
+
+https://1-dot-milibreria-174707.appspot.com/libro/delete/{id}
+
+https://1-dot-milibreria-174707.appspot.com/libro/save
+
 http://localhost:8080/libro/find/all
 
 http://localhost:8080/libro/find/{id}

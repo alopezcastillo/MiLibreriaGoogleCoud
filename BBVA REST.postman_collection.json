@@ -8,7 +8,60 @@
 	},
 	"item": [
 		{
-			"name": "find all",
+			"name": "CLOUD save",
+			"request": {
+				"url": "https://1-dot-milibreria-174707.appspot.com/libro/save",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" :\"\",\n    \"nombre\": \"El Quijote\",\n    \"autor\": \"Miguel de Cervantes\",\n    \"anyo\": 1605,\n    \"genero\": \"Novela de caballería\"\n}"
+				},
+				"description": "body json ejemplo, dejando el id en blanco lo genera objectify\n{\n    \"id\" :\"\",\n    \"nombre\": \"El Quijote\",\n    \"autor\": \"Miguel de Cervantes\",\n    \"anyo\": 1605,\n    \"genero\": \"Novela de caballería\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "CLOUD find by id",
+			"request": {
+				"url": "https://1-dot-milibreria-174707.appspot.com/libro/find/5629499534213120",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "http://localhost:8080/libro/find/{id}"
+			},
+			"response": []
+		},
+		{
+			"name": "CLOUD find all",
+			"request": {
+				"url": "https://1-dot-milibreria-174707.appspot.com/libro/find/all",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CLOUD delete by id",
+			"request": {
+				"url": "https://1-dot-milibreria-174707.appspot.com/libro/delete/5649391675244544",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "{id} parámetro al final de la url"
+			},
+			"response": []
+		},
+		{
+			"name": "LOCALHOST find all",
 			"request": {
 				"url": "http://localhost:8080/libro/find/all",
 				"method": "GET",
@@ -19,7 +72,7 @@
 			"response": []
 		},
 		{
-			"name": "find by id",
+			"name": "LOCALHOST find by id",
 			"request": {
 				"url": "http://localhost:8080/libro/find/4573968371548160",
 				"method": "GET",
@@ -30,7 +83,7 @@
 			"response": []
 		},
 		{
-			"name": "save",
+			"name": "LOCALHOST save",
 			"request": {
 				"url": "http://localhost:8080/libro/save",
 				"method": "POST",
@@ -50,7 +103,7 @@
 			"response": []
 		},
 		{
-			"name": "delete by id",
+			"name": "LOCALHOST delete by id",
 			"request": {
 				"url": "http://localhost:8080/libro/delete/4573968371548160",
 				"method": "DELETE",
