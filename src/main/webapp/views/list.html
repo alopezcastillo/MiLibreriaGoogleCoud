@@ -1,0 +1,30 @@
+
+<h2>LISTADO DE LIBROS</h2>
+<div ng-repeat="item in list">
+    <a href="/#/{{item.id}}">{{item.data}}</a>
+</div>
+
+<h3>Nuevo Libro</h3>
+<div>
+    <div>
+        <label for="id">id</label>
+        <input id="id" ng-model="form.id"/>
+    </div>
+    <div>
+        <label for="data">nombre</label>
+        <input id="data" ng-model="form.nombre"/>
+    </div>
+    <div>
+        <label for="data">autor</label>
+        <input id="data" ng-model="form.autor"/>
+    </div>
+    <div>
+        <label for="data">anyo</label>
+        <input id="data" ng-model="form.anyo"/>
+    </div>
+    <div>
+        <label for="data">genero</label>
+        <input id="data" ng-model="form.genero"/>
+    </div>
+    <button ng-click="save()">Save</button>
+</div>

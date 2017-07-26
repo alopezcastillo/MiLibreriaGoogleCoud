@@ -1,0 +1,35 @@
+Useful information
+------------------
+
+1. Start application: mvn clean appengine:devserver
+
+2. Access application: http://localhost:8080
+
+4. Access local console: http://localhost:8080/_ah/admin
+
+5. Access Google console: https://console.developers.google.com
+
+6. Deploy in Google: mvn clean appengine:update
+
+
+REST URL
+--------
+http://localhost:8080/libro/find/all
+
+http://localhost:8080/libro/find/{id}
+
+http://localhost:8080/libro/delete/{id}
+
+http://localhost:8080/libro/save
+
+Documentation
+-------------
+
+Google App Engine Java: https://cloud.google.com/appengine/docs/java/
+
+Objectify: https://github.com/objectify/objectify
+
+AngularJS: https://angularjs.org/
+
+
+

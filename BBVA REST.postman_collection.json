@@ -1,0 +1,64 @@
+{
+	"variables": [],
+	"info": {
+		"name": "BBVA REST",
+		"_postman_id": "da4ffcf2-8017-13dc-c877-8a2bac9cfd5a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "find all",
+			"request": {
+				"url": "http://localhost:8080/libro/find/all",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "find by id",
+			"request": {
+				"url": "http://localhost:8080/libro/find/4573968371548160",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "http://localhost:8080/libro/find/{id}"
+			},
+			"response": []
+		},
+		{
+			"name": "save",
+			"request": {
+				"url": "http://localhost:8080/libro/save",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" :\"\",\n    \"nombre\": \"El Quijote\",\n    \"autor\": \"Miguel de Cervantes\",\n    \"anyo\": 1605,\n    \"genero\": \"Novela de caballería\"\n}"
+				},
+				"description": "body json ejemplo, dejando el id en blanco lo genera objectify\n{\n    \"id\" :\"\",\n    \"nombre\": \"El Quijote\",\n    \"autor\": \"Miguel de Cervantes\",\n    \"anyo\": 1605,\n    \"genero\": \"Novela de caballería\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "delete by id",
+			"request": {
+				"url": "http://localhost:8080/libro/delete/4573968371548160",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "{id} parámetro al final de la url"
+			},
+			"response": []
+		}
+	]
+}
